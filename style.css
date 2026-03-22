@@ -1,0 +1,73 @@
+
+
+body {
+    background-color: black;
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: 100vh;
+    max-width: 60%;
+    border: 2px solid;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    
+    border: 2px dotted red;
+}
+
+
+#content {
+   /* display: flex;
+    flex-direction: column;*/
+    width: 240%;
+    background-color: violet;
+
+}
+
+
+img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+input {
+
+    appearance: none;
+}
+
+.label-input-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 40px; 
+}
+
+.user-input {
+    width: calc(50% - 20px); 
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 1px;
+}
+
+
+
