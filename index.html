@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Sign-Up-Form</title>
 </head>
 <body>
@@ -15,8 +18,8 @@
     </div> <!--First Box End-->
     <div class="box" id="content" >
         <div class="top-right-block">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <p>You know you want to.</p>
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="now">now</span> to get started.</p>
+            <p>You <span class="know">know</span> you want to.</p>
         </div>
         <div class="middle-right-block">
 
@@ -36,7 +39,7 @@
 
             <div class="user-input">
                 <label class="label" for="e-mail">EMAIL</label>
-                <input type="e-mail" name="e-mail" id="e-mail">
+                <input type="e-mail" name="e-mail" id="e-mail" required>
             </div>    
 
             <div class="user-input">
@@ -46,12 +49,12 @@
 
             <div class="user-input">
                 <label class="label" for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" minlength="8" maxlength="30">
             </div>   
 
             <div class="user-input">
                 <label class="label" for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input type="password" name="confirm-password" id="confirm-password" minlength="8" maxlength="30">
             </div>
             </div><!--Label Input Block End-->
 
@@ -59,7 +62,7 @@
         <div class="lower-right-block">
 
             <button type="submit">Create Account</button>
-            <div>Already have an account? Log In</div>
+            <div class="account-log-in">Already have an account? <span class="log">Log In</span></div>
 
         </div> <!--Lower Right Block End-->
     </div> <!--Second Box End-->

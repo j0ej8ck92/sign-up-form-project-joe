@@ -1,32 +1,38 @@
 
 
+/*.lexend-<uniquifier> {
+
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}*/
+
 body {
     background-color: black;
+    font-family: "Lexend", sans-serif;
+
 }
 
 .content-wrapper {
     display: flex;
     min-height: 100vh;
     max-width: 60%;
-    border: 2px solid;
-    background-color: aqua;
     margin-left: auto;
     margin-right: auto;
-}
-
-.box {
-    
-    border: 2px dotted red;
 }
 
 
 #content {
    /* display: flex;
     flex-direction: column;*/
-    width: 240%;
-    background-color: violet;
+    width: 260%;
+    background-color: whitesmoke;
+    padding-top: 7em;
+    
 
-}
+} 
 
 
 img{
@@ -36,21 +42,58 @@ img{
     object-fit: cover;
 }
 
-p {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 12px;
+.top-right-block {
+    padding-left: 30px;
+    padding-right: 5em;
 }
 
+.middle-right-block {
+    background-color: white;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+}
+
+.lower-right-block {
+    padding-left: 30px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.now, .know {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+
 h1 {
-    font-size: 24px;
-    font-weight: bold;
-    padding: 12px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 input {
-
+    border-radius: 4px;
     appearance: none;
+    min-height: 1.5em;
+    border: 1px rgb(224, 224, 224);
+    background-color: rgb(236, 234, 234);
+    box-shadow: 0 8px 6px -6px black;
+    cursor: pointer;
+}
+
+input:focus {
+  outline: none; /* Removes the default browser outline */
+  border-color: rgb(42, 42, 212); /* Change border color */
+  box-shadow: 0 8px 6px -6px rgba(2, 48, 97, 0.5);
+   /* Add a custom shadow */
 }
 
 .label-input-block {
@@ -60,13 +103,40 @@ input {
 }
 
 .user-input {
-    width: calc(50% - 20px); 
+    width: calc(50% - 125px); 
     display: flex;
     flex-direction: column;
+    font-size: 10px;
+    color: rgba(129, 30, 30, 0.616);
+    text-shadow: .5px .5px .5px black;
+
 }
 
 label {
     margin-bottom: 1px;
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #596D48;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    box-shadow: 0 8px 6px -6px black;
+    cursor: pointer;
+
+}
+
+.account-log-in {
+    font-size: 12px;
+}
+
+.log {
+    color: #596D48;
 }
 
 
