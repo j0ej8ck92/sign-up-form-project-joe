@@ -10,64 +10,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Sign-Up-Form</title>
 </head>
-<body>
-
-<div class="content-wrapper">
-    <div class="box" id="picture">
-        <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="halie-west picture">
-    </div> <!--First Box End-->
-    <div class="box" id="content" >
-        <div class="top-right-block">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="now">now</span> to get started.</p>
-            <p>You <span class="know">know</span> you want to.</p>
-        </div>
-        <div class="middle-right-block">
-
-            <h1>Let's do this!</h1>
-            
-            <div class="label-input-block">
-
-            <div class="user-input">
-                <label class="label" for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name">
-            </div>    
-
-            <div class="user-input">
-                <label class="label" for="last-name">LAST NAME</label>
-                <input type="text" name="last_name" id="last-name">
-            </div>
-
-            <div class="user-input">
-                <label class="label" for="e-mail">EMAIL</label>
-                <input type="e-mail" name="e-mail" id="e-mail" required>
-            </div>    
-
-            <div class="user-input">
-                <label class="label" for="phone-number">PHONE NUMBER</label>
-                <input type="tel" name="phone-number" id="phone-number">
-            </div>
-
-            <div class="user-input">
-                <label class="label" for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" minlength="8" maxlength="30">
-            </div>   
-
-            <div class="user-input">
-                <label class="label" for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm-password" id="confirm-password" minlength="8" maxlength="30">
-            </div>
-            </div><!--Label Input Block End-->
-
-        </div> <!--Middle Right Block End-->
-        <div class="lower-right-block">
-
-            <button type="submit">Create Account</button>
-            <div class="account-log-in">Already have an account? <span class="log">Log In</span></div>
-
-        </div> <!--Lower Right Block End-->
-    </div> <!--Second Box End-->
-</div> <!--Content Wrapper End-->
-    
-</body>
-
+    <body>
+        <div class="content-wrapper">
+            <div class="box" id="picture">
+                <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="halie-west picture">
+                <div class="odin-logo-container" id="odin-logo-container">
+                    <img class="odin-logo" src="odin-lined.png" alt="odin-logo">
+                </div> 
+                <div class="picture-credit">Photo by <span class="text-credit">Halie West</span> on <span class="text-credit">Unsplash</span></div>
+            </div> 
+            <div class="box" id="content" >
+                <div class="top-right-block">
+                    <p class="first-paragraph">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="now">now</span> to get started.</p>
+                    <p>You <span class="know">know</span> you want to.</p>
+                </div>
+                <div class="middle-right-block">
+                    <h1>Let's do this!</h1>
+                    <div class="label-input-block">
+                        <div class="user-input">
+                            <label class="label" for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>    
+                        <div class="user-input">
+                            <label class="label" for="last-name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last-name">
+                        </div>
+                        <div class="user-input">
+                            <label class="label" for="e-mail">EMAIL</label>
+                            <input type="e-mail" name="e-mail" id="e-mail" required>
+                        </div>    
+                        <div class="user-input">
+                            <label class="label" for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                        <div class="user-input">
+                            <label class="label" for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" minlength="8" maxlength="30" required>
+                        </div>   
+                        <div class="user-input">
+                            <label class="label" for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" minlength="8" maxlength="30" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-right-block">
+                    <button type="submit">Create Account</button>
+                    <div class="account-log-in">Already have an account? <span class="log">Log In</span></div>
+                </div> 
+            </div> 
+        </div> 
+    </body>
 </html>

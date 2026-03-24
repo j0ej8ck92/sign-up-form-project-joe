@@ -1,18 +1,10 @@
 
 
-/*.lexend-<uniquifier> {
 
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-
-}*/
 
 body {
     background-color: black;
     font-family: "Lexend", sans-serif;
-
 }
 
 .content-wrapper {
@@ -25,26 +17,53 @@ body {
 
 
 #content {
-   /* display: flex;
-    flex-direction: column;*/
-    width: 260%;
+    width: 280%;
     background-color: whitesmoke;
     padding-top: 7em;
-    
+}
 
-} 
-
+#picture {
+    position: relative;
+}
 
 img{
-
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.odin-logo {
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+}
+
+.picture-credit {
+    font-size: 11px;
+    color: whitesmoke;
+    opacity: 0.75;
+    position: absolute; 
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 1em;
+}
+
+.text-credit {
+    text-decoration: underline;
+}
+
 .top-right-block {
     padding-left: 30px;
     padding-right: 5em;
+}
+
+.first-paragraph {
+    margin-bottom: 2em;
 }
 
 .middle-right-block {
@@ -54,7 +73,6 @@ img{
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 30px;
-
 }
 
 .lower-right-block {
@@ -70,9 +88,7 @@ p {
     font-style: italic;
     font-size: 18px;
     font-weight: 600;
-    
 }
-
 
 h1 {
     font-size: 20px;
@@ -90,10 +106,16 @@ input {
 }
 
 input:focus {
-  outline: none; /* Removes the default browser outline */
-  border-color: rgb(42, 42, 212); /* Change border color */
+  outline: none; 
+  border-color: rgb(42, 42, 212);
   box-shadow: 0 8px 6px -6px rgba(2, 48, 97, 0.5);
-   /* Add a custom shadow */
+}
+
+input:invalid {
+  outline: none; 
+  border-color: rgb(42, 42, 212); 
+  box-shadow: 0 8px 6px -6px #a30f0f;
+    
 }
 
 .label-input-block {
@@ -128,7 +150,6 @@ button {
     margin-bottom: 2em;
     box-shadow: 0 8px 6px -6px black;
     cursor: pointer;
-
 }
 
 .account-log-in {
